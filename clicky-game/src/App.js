@@ -1,25 +1,26 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import image from './img/911.jpg';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
+
+
+        <div class="row">
+          <div class="col s12 m7">
+            <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+   <img class="activator" src={image}/>
+ </div>
+              </div>
+
+          </div>
+        </div>
+
       </div>
     );
   }
