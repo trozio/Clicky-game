@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import image from './img/911.jpg';
+import porsche from './img/911.jpg';
 
 class App extends Component {
+
+handleClick(){
+    console.log("hello");
+}
+
   render() {
     return (
       <div className="App">
-
-
-
-        <div class="row">
-          <div class="col s12 m7">
-            <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-   <img class="activator" src={image}/>
- </div>
-              </div>
-
+        <div className="row">
+          <div className="col s12 m7">
+            <div className="card">
+            <div onClick={this.handleClick} className="card-image waves-effect waves-block waves-light">
+              <img alt="Not Found" className="activator" src={porsche}/>
+             </div>
+             </div>
           </div>
         </div>
-
       </div>
     );
   }
