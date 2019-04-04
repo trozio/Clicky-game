@@ -4,7 +4,7 @@ import porsche from './img/911.jpg';
 
 class App extends Component {
 
-handleClick(){
+handleClick = event => {
     console.log("hello");
 }
 
