@@ -28,6 +28,7 @@ state = {
   return true;
 }
 
+
 handleCorrect = id => {
   this.state.supercars.find((o, i) => {
     if (o.id === id) {
